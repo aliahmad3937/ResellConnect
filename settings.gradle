@@ -1,0 +1,43 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+
+        maven {
+            url "https://maven.google.com"
+        }
+        maven {
+            url "https://dl.cloudsmith.io/public/cometchat/cometchat-pro-android/maven/"
+        }
+
+        jcenter()
+
+    }
+
+
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        google()
+        mavenCentral()
+
+        maven {
+            url "https://maven.google.com"
+        }
+
+        jcenter()
+        maven {
+            url "https://dl.cloudsmith.io/public/cometchat/cometchat-pro-android/maven/"
+        }
+
+        maven { url 'https://jitpack.io' }
+
+
+
+    }
+}
+rootProject.name = "Resell Connect"
+include ':app'
+include ':uikit-kotlin'

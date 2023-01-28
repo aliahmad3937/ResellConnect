@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "790446297624",
+    "firebase_url": "https://resellconnect-b8aca.firebaseio.com",
+    "project_id": "resellconnect-b8aca",
+    "storage_bucket": "resellconnect-b8aca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:790446297624:android:f3032a7b4bf0e09d20a96d",
+        "android_client_info": {
+          "package_name": "com.cc.resellconnect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "790446297624-5grit88e3tivfpq10uaubll3msfqunlv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cc.resellconnect",
+            "certificate_hash": "1264e155114807d9adefd20d0ecbba1f5024c92f"
+          }
+        },
+        {
+          "client_id": "790446297624-vkldd3puu9hs1q04tbm6ij6turn8hb6a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxRkLPhKsqLk7XfmBp0VEJecLAkGm9lVg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "790446297624-vkldd3puu9hs1q04tbm6ij6turn8hb6a.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "790446297624-5jcrvn8b1tne407te48874nmqk8uk0sf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "uk.co.haiderashfaq.ResellConnect"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,220 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".ui_components.chats.CometChatConversationList">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/topBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:id="@+id/chat_rule"
+                android:layout_margin="16dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_channel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tv_channel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Channels"
+                        android:textAllCaps="true"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        />
+
+                    <View
+                        android:id="@+id/v_1"
+                        android:layout_width="0dp"
+                        android:layout_height="2dp"
+                        android:background="@color/grey"
+                        android:layout_marginTop="5dp"
+                        app:layout_constraintStart_toStartOf="@id/tv_channel"
+                        app:layout_constraintEnd_toEndOf="@id/tv_channel"
+                        app:layout_constraintTop_toBottomOf="@id/tv_channel"
+                        android:layout_marginHorizontal="5dp"
+                        />
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_dm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="15dp"
+                    >
+                    <TextView
+                        android:id="@+id/tv_dm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DM'S"
+                        android:textAllCaps="true"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        />
+
+                    <View
+                        android:id="@+id/v_2"
+                        android:layout_width="0dp"
+                        android:layout_height="2dp"
+                        android:background="@color/grey"
+                        app:layout_constraintStart_toStartOf="@id/tv_dm"
+                        app:layout_constraintEnd_toEndOf="@id/tv_dm"
+                        app:layout_constraintTop_toBottomOf="@id/tv_dm"
+                        android:layout_marginHorizontal="4dp"
+                        android:layout_marginTop="5dp"
+                        />
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+
+
+            <ImageView
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:id="@+id/create_group"
+                android:layout_margin="16dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_create"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:tint="@color/grey" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_search_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <EditText
+                android:id="@+id/search_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/search_box"
+                android:drawableStart="@drawable/ic_search"
+                android:drawablePadding="5dp"
+                android:hint="@string/search"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="8dp" />
+            <ImageView
+                android:id="@+id/clear_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="8sp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:src="@drawable/ic_close_24dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/no_conversation_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:alpha="0.6"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/no_conversation" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_conversations"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        </LinearLayout>
+
+        <com.cometchat.pro.uikit.ui_components.shared.cometchatConversations.CometChatConversation
+            android:id="@+id/rv_conversation_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/cometchat_conversation_list_item" />
+
+    </LinearLayout>
+
+    <include layout="@layout/conversation_shimmer" />
+
+
+</RelativeLayout>

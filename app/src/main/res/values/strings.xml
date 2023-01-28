@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Resell Connect</string>
+
+    <string name="channel_description">channel_description</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="resell_conneect">Resell Conneect</string>
+    <string name="guides">Guides</string>
+    <string name="channels">Channels</string>
+    <string name="settings">Settings</string>
+    <string name="forgot_password"><u>Forgot Password?</u></string>
+    <string name="don_t_have_an_account_visit_our_website">Don\'t have an account?<u>Visit our website</u></string>
+    <string name="loading">Loading</string>
+
+    <string name="group">group</string>
+    <string name="members">Members</string>
+    <string name="before_you_enter_the_world_of_reselling_nplease_take_a_moment_to_read_the_chat_rules_amp_nbeginners_guide"><![CDATA[Before you enter the world of reselling,\nplease take a moment to read the Chat Rules &\nBeginners guide]]></string>
+    <string name="powered_by_stockx">Powered By   <b> <font color='#296143'> StockX</font></b></string>
+    <string name="resell_notification_channel_id">com.cc.resellconnect</string>
+    <string name="resell_notification_channel_name">Resell Connect</string>
+    <string name="resell_notification_channel_description">Resell Connect</string>
+    <string name="resellconnect_would_like_to_send_you_notifications"><b>\"ResellConnect\" Would Like\n to Send You Notifications\n</b>Notifications may include alerts,\nsounds and icon badges. These can be\nconfigured in Settings.</string>
+    <string name="pass_reset"><b>Password Reset\n</b>An email has been sent to your \nemail address</string>
+    <string name="reset">Password Reset email is Sent at your Email Id!</string>
+
+    <string name="catalyst_dismiss_button" project="catalyst" translatable="false">Dismiss\n(ESC)</string>
+    <string name="catalyst_report_button" project="catalyst" translatable="false">Report</string>
+    <string name="catalyst_reload_button" project="catalyst" translatable="false">Reload\n(R,\u00A0R)</string>
+    <string name="to_get_access_to_our_exclusive_premium_features_you_will_need_to_upgrade_your_membership_via_your_account">To get access to our exclusive premium features, you\n will need to upgrade your membership via your \naccount</string>
+</resources>

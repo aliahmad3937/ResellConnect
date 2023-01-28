@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/resellConnect">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.cc.resellconnect.ui.fragments.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_resellConnect"
+            app:destination="@id/resellConnect"
+            app:popUpTo="@id/nav_graph"
+            />
+        <action
+            android:id="@+id/action_splashFragment_to_userLogin"
+            app:destination="@id/userLogin" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/resellConnect"
+        android:name="com.cc.resellconnect.ui.fragments.ResellConnect"
+        android:label="fragment_resell_connect"
+        tools:layout="@layout/fragment_resell_connect" >
+
+        <action
+            android:id="@+id/action_resellConnect_to_sneakerDetailFragment"
+            app:destination="@id/sneakerDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/guides"
+        android:name="com.cc.resellconnect.ui.fragments.Guides"
+        android:label="fragment_guides"
+        tools:layout="@layout/fragment_guides" />
+    <fragment
+        android:id="@+id/channelsFragment"
+        android:name="com.cc.resellconnect.ui.fragments.ChannelsFragment"
+        android:label="fragment_channels"
+        tools:layout="@layout/fragment_channels" >
+        <action
+            android:id="@+id/action_channelsFragment_to_cometChatGroupList"
+            app:destination="@id/cometChatGroupList"
+            app:launchSingleTop="true"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/nav_graph"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.cc.resellconnect.ui.fragments.Settings"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settings_to_userLogin"
+            app:destination="@id/userLogin"
+            app:popUpTo="@id/nav_graph"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/userLogin"
+        android:name="com.cc.resellconnect.ui.fragments.UserLogin"
+        android:label="UserLogin" >
+        <action
+            android:id="@+id/action_userLogin_to_resellConnect"
+            app:destination="@id/resellConnect" />
+    </fragment>
+    <fragment
+        android:id="@+id/cometChatGroupList"
+        android:name="com.cc.resellconnect.ui.fragments.CometChatGroupList"
+        android:label="CometChatGroupMemberList" >
+        <action
+            android:id="@+id/action_cometChatGroupList_to_cometChatUserList"
+            app:destination="@id/cometChatUserList"
+            app:enterAnim="@anim/animate_slides_up"
+            app:exitAnim="@anim/animate_slides_down" />
+        <action
+            android:id="@+id/action_cometChatGroupList_to_cometChatConversationList"
+            app:destination="@id/cometChatConversationList"
+            app:launchSingleTop="true"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/nav_graph"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/cometChatUserList"
+        android:name="com.cometchat.pro.uikit.ui_components.users.user_list.CometChatUserList"
+        android:label="CometChatUserList" >
+        <action
+            android:id="@+id/action_cometChatUserList_to_cometChatConversationList"
+            app:destination="@id/cometChatConversationList"
+            app:launchSingleTop="true"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/nav_graph"
+            />
+        <action
+            android:id="@+id/action_cometChatUserList_to_cometChatGroupList"
+            app:destination="@id/cometChatGroupList"
+            app:launchSingleTop="true"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/nav_graph"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/sneakerDetailFragment"
+        android:name="com.cc.resellconnect.ui.fragments.SneakerDetailFragment"
+        android:label="fragment_sneaker_detail"
+        tools:layout="@layout/fragment_sneaker_detail" >
+        <argument
+            android:name="sneaker"
+            app:argType="com.cc.resellconnect.models.SneakerModel" />
+        <argument
+            android:name="type"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/sneakers"
+        android:name="com.cc.resellconnect.ui.fragments.Sneakers"
+        android:label="Sneakers" >
+        <action
+            android:id="@+id/action_sneakers_to_sneakerDetailFragment"
+            app:destination="@id/sneakerDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resellOpportunities"
+        android:name="com.cc.resellconnect.ui.fragments.ResellOpportunities"
+        android:label="ResellOpportunities" >
+        <action
+            android:id="@+id/action_resellOpportunities_to_sneakerDetailFragment"
+            app:destination="@id/sneakerDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cards"
+        android:name="com.cc.resellconnect.ui.fragments.Cards"
+        android:label="Cards" >
+        <action
+            android:id="@+id/action_cards_to_sneakerDetailFragment"
+            app:destination="@id/sneakerDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cometChatConversationList"
+        android:name="com.cc.resellconnect.ui.fragments.CometChatConversationList"
+        android:label="CometChatConversationList" >
+        <action
+            android:id="@+id/action_cometChatConversationList_to_cometChatGroupList"
+            app:destination="@id/cometChatGroupList"
+            app:launchSingleTop="true"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/nav_graph"
+            />
+    </fragment>
+
+
+</navigation>

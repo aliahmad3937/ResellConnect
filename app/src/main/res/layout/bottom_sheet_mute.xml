@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="5dp"
+        android:layout_margin="2dp">
+
+
+        <!--text view for displaying course name-->
+        <TextView
+            android:id="@+id/idTVCourseName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Notifications"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <!--text view for displaying course duration-->
+        <TextView
+            android:id="@+id/tv_mute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+           android:hint="Chat Username"
+            android:layout_gravity="center_horizontal"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="10dp"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:textColor="@color/flip"
+            android:textSize="15sp" />
+
+        <!--button for dismissing our dialog-->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:backgroundTint="#878787"
+            android:layout_marginTop="25dp"
+            android:textSize="18sp"
+            android:paddingVertical="13dp"
+            android:text="Cancel" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
