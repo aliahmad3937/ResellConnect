@@ -31,6 +31,7 @@ A Product Seller App User can buy a Product, Can subscribe products to receive n
 <img src="https://github.com/aliahmad3937/ResellConnect/blob/master/asset/detail.jpeg" width="150" height="280">
 <img src="https://github.com/aliahmad3937/ResellConnect/blob/master/asset/homePage.jpeg" width="150" height="280">
 <img src="https://github.com/aliahmad3937/ResellConnect/blob/master/asset/setting.jpeg" width="150" height="280">
+<img src="https://github.com/aliahmad3937/ResellConnect/blob/master/asset/users.jpeg" width="150" height="280">
 
 </p>
 
@@ -38,6 +39,8 @@ A Product Seller App User can buy a Product, Can subscribe products to receive n
 <img src="https://github.com/aliahmad3937/ResellConnect/blob/master/asset/sites.jpeg" width="150" height="280">
 <img src="https://github.com/aliahmad3937/ResellConnect/blob/master/asset/pdf.jpeg" width="150" height="280">
 <img src="https://github.com/aliahmad3937/ResellConnect/blob/master/asset/channels.jpeg" width="150" height="280">
+<img src="https://github.com/aliahmad3937/ResellConnect/blob/master/asset/userChat.jpeg" width="150" height="280">
+
 </p>
 
 
